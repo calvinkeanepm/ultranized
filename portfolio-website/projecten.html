@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Projecten | Ultranized</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body id="top">
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">Ultranized</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html#top" class="nav-link direct-link">HOME</a></li>
+                    <li><a href="index.html#over-mij" class="nav-link direct-link">OVER MIJ</a></li>
+                    <li><a href="./cv.html" class="nav-link direct-link">CV</a></li>
+                    <li><a href="./projecten.html" class="nav-link direct-link">PROJECTEN</a></li>
+                    <li><a href="index.html#contact" class="nav-link direct-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Rest van je content -->
+    <div class="container">
+        <!-- Filter sectie -->
+        <div class="projects-intro">
+            <h1 class="projects-title">Mijn Projecten</h1>
+            <p>Welkom bij mijn portfolio van diverse projecten. Van IT-infrastructuur tot verbouwingen, hier vind je een overzicht van mijn werkzaamheden door de jaren heen. Gebruik de tags hieronder om specifieke projecten te filteren op basis van jaar of type project.</p>
+        </div>
+
+        <div class="filter-container">
+            <h3>Filter op tags</h3>
+            <div class="filters-wrapper">
+                <!-- Jaar dropdown -->
+                <div class="select-wrapper">
+                    <select class="year-select" onchange="filterProjects(this)">
+                        <option value="">Selecteer jaar</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+                
+                <!-- Project type tags -->
+                <div class="tag-filters">
+                    <button onclick="filterProjects(this)" class="filter-tag" data-tag="verbouwing">Verbouwing</button>
+                    <button onclick="filterProjects(this)" class="filter-tag" data-tag="netwerk">Netwerk</button>
+                    <button onclick="filterProjects(this)" class="filter-tag" data-tag="IT">IT</button>
+                    <button onclick="filterProjects(this)" class="filter-tag" data-tag="autos">Auto's</button>
+                    <button onclick="filterProjects(this)" class="filter-tag" data-tag="koeltechniek">Koeltechniek</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projecten container -->
+        <div class="projects-container">
+            <!-- Project Bureau -->
+            <div class="project-card" data-tags="2024,verbouwing,IT">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/projects/buro2024/buro1.jpeg" alt="Bureau foto 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/projects/buro2024/buro2.jpeg" alt="Bureau foto 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/projects/buro2024/buro3.jpeg" alt="Bureau foto 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/projects/buro2024/buro4.jpeg" alt="Bureau foto 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls>
+                                <source src="images/projects/buro2024/buro5.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Navigatie pijlen -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                <div class="project-info">
+                    <h3>Bureau Project</h3>
+                    <div class="project-tags">
+                        <span class="tag">2024</span>
+                        <span class="tag">Verbouwing</span>
+                        <span class="tag">IT</span>
+                    </div>
+                    <p>Maatwerk bureau van 354cmx65cm met een Dual Monitor Setup en Triple Monitor Setup. Gaming PC & Dockingstations.</p>
+                </div>
+            </div>
+                        <!-- Project Curtains -->
+                        <div class="project-card" data-tags="2024,verbouwing">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/projects/curtains2024/1.jpg" alt="Curtains foto 1">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/projects/curtains2024/2.jpg" alt="Curtains foto 2">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/projects/curtains2024/3.jpg" alt="Curtains foto 3">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <video controls>
+                                            <source src="images/projects/curtains2024/4.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+  
+                                </div>
+                                <!-- Navigatie pijlen -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            
+                            <div class="project-info">
+                                <h3>Curtains</h3>
+                                <div class="project-tags">
+                                    <span class="tag">2024</span>
+                                    <span class="tag">Verbouwing</span>
+                                </div>
+                                <p>Custom gordijnbakken, ambient lighting en Zigbee gordijnen.</p>
+                            </div>
+                        </div>
+                             <!-- Project Vertu 3D -->
+                             <div class="project-card" data-tags="2024,verbouwing,koeltechniek">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aircovertu2024/vertu1.jpeg" alt="Vertu foto 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aircovertu2024/vertu2.jpeg" alt="Vertu foto 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aircovertu2024/vertu3.jpeg" alt="Vertu foto 3">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aircovertu2024/vertu4.jpeg" alt="Vertu foto 4">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aircovertu2024/vertu5.jpeg" alt="Vertu foto 5">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aircovertu2024/vertu6.jpeg" alt="Vertu foto 6">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aircovertu2024/vertu7.jpeg" alt="Vertu foto 7">
+                                        </div>
+      
+                                    </div>
+                                    <!-- Navigatie pijlen -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                
+                                <div class="project-info">
+                                    <h3>Airco Vertu 3D</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">2024</span>
+                                        <span class="tag">Verbouwing</span>
+                                        <span class="tag">Koeltechniek</span>
+                                    </div>
+                                    <p>Vertu 3D Airco installatie op mijn eigen slaapkamer.</p>
+                                </div>
+                            </div>
+                            <!-- Project NAS -->
+                            <div class="project-card" data-tags="2024,IT">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/nas2024/1.jpg" alt="NAS foto 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/nas2024/2.jpeg" alt="NAS foto 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/nas2024/3.jpeg" alt="NAS foto 3">
+                                        </div>
+      
+                                    </div>
+                                    <!-- Navigatie pijlen -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                
+                                <div class="project-info">
+                                    <h3>NAS 72TB</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">2024</span>
+                                        <span class="tag">IT</span>
+                                    </div>
+                                    <p>Synology DS920+ gebouwd met 72TB, SHR en 20gb RAM upgrade.</p>
+                                </div>
+                            </div>
+                             <!-- Project Unifi Appartement -->
+                            <div class="project-card" data-tags="2024,verbouwing,IT,netwerk">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aptunifi2024/1.jpg" alt="Unifi foto 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aptunifi2024/2.jpg" alt="Unifi foto 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aptunifi2024/3.jpg" alt="Unifi foto 3">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aptunifi2024/4.jpg" alt="Unifi foto 4">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aptunifi2024/5.jpg" alt="Unifi foto 5">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/aptunifi2024/6.jpg" alt="Unifi foto 6">
+                                        </div>
+      
+                                    </div>
+                                    <!-- Navigatie pijlen -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                
+                                <div class="project-info">
+                                    <h3>Unifi Installatie</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">2024</span>
+                                        <span class="tag">Verbouwing</span>
+                                        <span class="tag">IT</span>
+                                        <span class="tag">Netwerk</span>
+                                    </div>
+                                    <p>Unifi installatie voor mijn appartement.</p>
+                                </div>
+                            </div>
+                             <!-- Project Exhaust -->
+                            <div class="project-card" data-tags="2024,autos">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/exhaust2024/1.jpg" alt="Exhaust foto 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/exhaust2024/2.jpg" alt="Exhaust foto 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/projects/exhaust2024/3.jpeg" alt="Exhaust foto 3">
+                                        </div>
+      
+                                    </div>
+                                    <!-- Navigatie pijlen -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                
+                                <div class="project-info">
+                                    <h3>Upgrade Uitlaatsysteem</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">2024</span>
+                                        <span class="tag">Autos</span>
+                                    </div>
+                                    <p>Volledig 3 inch uitlaatsysteem upgrade van mijn Audi A3 8p 2.0 TDI Quattro.</p>
+                                </div>
+                            </div>
+                                <!-- Project Klipsch -->
+                                <div class="project-card" data-tags="2024,IT">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="images/projects/klipsch2024/1.jpg" alt="Klipsch foto 1">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/projects/klipsch2024/2.jpg" alt="Klipsch foto 2">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/projects/klipsch2024/3.jpg" alt="Klipsch foto 3">
+                                            </div>
+          
+                                        </div>
+                                        <!-- Navigatie pijlen -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                    </div>
+                                    
+                                    <div class="project-info">
+                                        <h3>Klipsch</h3>
+                                        <div class="project-tags">
+                                            <span class="tag">2024</span>
+                                            <span class="tag">IT</span>
+                                        </div>
+                                        <p>Klipsch R-115SW reparatie - full recap en IRS2092 chip vervanging.</p>
+                                    </div>
+                                </div>
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Basis instellingen
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            
+            // Navigatie pijlen
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="js/projects.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 

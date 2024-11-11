@@ -1,0 +1,67 @@
+.profile-summary {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+}
+
+.profile-section {
+    background: var(--section-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.profile-section:hover {
+    transform: translateY(-5px);
+}
+
+.skills-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--primary-color);
+    width: var(--skill-level);
+    border-radius: 4px;
+    animation: fillSkill 1s ease-out forwards;
+}
+
+.competencies-list {
+    list-style: none;
+    padding: 0;
+}
+
+.interests-languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+} 
